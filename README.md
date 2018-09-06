@@ -1,39 +1,35 @@
-# algo_adaptatif
-Dynamic Island Model
+# ea-aos
 
-# Compil
+Adaptative Operator Selection w/ Evolutionnary Algorithm 
 
-	`make clean`
+# Installation
 
-	`make`
+`make && make clean`
 
 
-# Utilisation
+# Usage
 
- ` ./bin/main--tsp <instance tsp>  --out <fichier output tsp> `
+ ` ./bin/main --tsp <tsp instance>  --out <output tsp> `
 
-Autres options:
- --sz <taille population> [defaut: 10] 
- --it <nombre itérations> [defaut: 100]
- --pmin <proba min> [defaut: 0.10]
- --pc <proba croisement>  [defaut: 1.0]
- --pm <proba mutation> [defaut: 1.0]
+## Options
+```
+ --sz <population size> [defaut: 10] 
+ --it <number of iterations> [defaut: 100]
+ --pmin <minimal probabibility> [defaut: 0.10]
+ --pc <crossover probability>  [defaut: 1.0]
+ --pm <mutation probability> [defaut: 1.0]
 --alpha <facteur apprentissage>  [defaut: 0.85] 
  --beta <bruit> [defaut: 0.01] 
+```
 
 
-## Exemple
+## Example
 
-	` ./bin/main --tsp a280.tsp  --out a280.out --sz 15 --it 100`
+` ./bin/main --tsp a280.tsp  --out a280.out --sz 15 --it 100`
 
-## Dessiner un graphique fitness/taille populations
+## Draw a fitness/population size of each island graphic
 
-	lancer le programme ./bin/main
-	
-	puis 
-
-	lancer cette commande :
-	` Rscript compo.R fitness_fct_size.csv `
-
+`./bin/main`
+` Rscript compo.R fitness_fct_size.csv `
  
 

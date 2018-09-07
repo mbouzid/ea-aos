@@ -1,6 +1,6 @@
 # ea-aos
 
-Adaptative Operator Selection w/ Evolutionnary Algorithm 
+Adaptive Operator Selection w/ Dynamic Island Model
 
 # Installation
 
@@ -18,8 +18,8 @@ Adaptative Operator Selection w/ Evolutionnary Algorithm
  --pmin <minimal probabibility> [defaut: 0.10]
  --pc <crossover probability>  [defaut: 1.0]
  --pm <mutation probability> [defaut: 1.0]
---alpha <facteur apprentissage>  [defaut: 0.85] 
- --beta <bruit> [defaut: 0.01] 
+--alpha <learning rate>  [defaut: 0.85] 
+ --beta <noise rate> [defaut: 0.01] 
 ```
 
 
